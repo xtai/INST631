@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Schedule</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="ghost.css">
+  </head>
+  <body style="padding-top: 54px;">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark navbar-fixed-top bg-danger bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#NavigationBar">
+        &#9776;
+      </button>
+      <div class="container">
+        <div class="collapse navbar-toggleable-xs" id="NavigationBar">
+          <a class="navbar-brand" href="/">The Ghostbusters</a>
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Case</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target="#NavCollapsingContent" href="#">Where</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse" id="NavCollapsingContent" style="margin: 8px -16px -8px;">
+        <div class="bg-inverse p-a">
+          <div class="container">
+            <h4>Collapsed content</h4>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--/ Navigation Bar -->
+    <br>
+    <!-- Home Content -->
+    <div class="container process-steps active" id="schedule-step-1">
+      <div class="process-steps-cover"></div>
+      <div class="row">
+        <div class="col-md-1 col-sm-12">
+          <h1><span class="process-steps-number">1</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">What Ghost?</span></h1>
+        </div>
+        <div class="col-md-10 col-sm-12">
+          <h1 class="process-steps-title hidden-sm-down">What Ghost?</h1>
+          <div class="form-group">
+            <label class="control-label" for="Title">Describe what did you see, get as specific as you can.</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="It looks lile a lady, and it appears to be a very odd reader as she likes to stack books up in the air."></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-1 col-md-3 step_button_div">
+          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
+        </div>
+      </div>
+    </div>
+    <div class="container process-steps" id="schedule-step-2">
+      <div class="process-steps-cover"></div>
+      <div class="row">
+        <div class="col-md-1 col-sm-12">
+          <h1><span class="process-steps-number">2</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">When did it happen?</span></h1>
+        </div>
+        <div class="col-md-10 col-sm-12">
+          <h1 class="process-steps-title hidden-sm-down">When did it happen?</h1>
+          <div class="row">
+            <div class="col-xl-5 col-md-12">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-danger-outline">
+                  <input type="radio" name="Date" id="date_1" autocomplete="off"> Eariler
+                </label>
+                <label class="btn btn-danger-outline">
+                  <input type="radio" name="Date" id="date_2" autocomplete="off"> Yesterday
+                </label>
+                <label class="btn btn-danger-outline active">
+                  <input type="radio" name="Date" id="date_3" autocomplete="off" checked> Today
+                </label>
+              </div>
+            </div>
+            <div class="col-xl-5 col-md-12">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-danger-outline">
+                  <input type="radio" name="Time" id="time_1" autocomplete="off"> Morning
+                </label>
+                <label class="btn btn-danger-outline">
+                  <input type="radio" name="Time" id="time_2" autocomplete="off"> Afternoon
+                </label>
+                <label class="btn btn-danger-outline">
+                  <input type="radio" name="Time" id="time_3" autocomplete="off"> Evening
+                </label>
+                <label class="btn btn-danger-outline">
+                  <input type="radio" name="Time" id="time_3" autocomplete="off"> Night
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-1 col-md-3 step_button_div">
+          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
+        </div>
+      </div>
+    </div>
+    <div class="container process-steps" id="schedule-step-3">
+      <div class="process-steps-cover"></div>
+      <div class="row">
+        <div class="col-md-1 col-sm-12">
+          <h1><span class="process-steps-number">3</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">Any photos or videos?</span></h1>
+        </div>
+        <div class="col-md-10 col-sm-12">
+          <h1 class="process-steps-title hidden-sm-down">Any photos or videos?</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-1 col-md-3 step_button_div">
+          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
+        </div>
+      </div>
+    </div>
+    <div class="container process-steps" id="schedule-step-4">
+      <div class="process-steps-cover"></div>
+      <div class="row">
+        <div class="col-md-1 col-sm-12">
+          <h1><span class="process-steps-number">4</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">Pick a date and time!</span></h1>
+        </div>
+        <div class="col-md-10 col-sm-12">
+          <h1 class="process-steps-title hidden-sm-down">Pick a date and time!</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-1 col-md-3 step_button_div">
+          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
+        </div>
+      </div>
+    </div>
+    <div class="container process-steps" id="schedule-step-5">
+      <div class="process-steps-cover"></div>
+      <div class="row">
+        <div class="col-md-1 col-sm-12">
+          <h1><span class="process-steps-number">5</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">How to contact you?</span></h1>
+        </div>
+        <div class="col-md-10 col-sm-12">
+          <h1 class="process-steps-title hidden-sm-down">How to contact you?</h1>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">Eariler</button>
+            <button type="button" class="btn btn-secondary">Yesterday</button>
+            <button type="button" class="btn btn-secondary">Today</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-1 col-md-3 step_button_div">
+          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
+        </div>
+      </div>
+    </div>
+    <div class="container process-steps" id="schedule-step-6">
+      <div class="process-steps-cover"></div>
+      <div class="row">
+        <div class="col-md-1 col-sm-12">
+          <h1><span class="process-steps-number">6</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">You are all set!</span></h1>
+        </div>
+        <div class="col-md-10 col-sm-12">
+          <h1 class="process-steps-title hidden-sm-down">You are all set!</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-1 col-md-3 col-sm-12">
+          <a class="btn btn-danger-outline btn-block step_button" href="#schedule-step-1" onclick="this.blur();">Review my case</a>
+        </div>
+        <div class="hidden-md-up col-sm-12">
+          <br>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <a class="btn btn-success btn-block step_button">Submit</a>
+        </div>
+      </div>
+      <div style="margin-bottom: 400px;"></div>
+    </div>
+    <!--/ Home Content -->
+    <!-- Footer -->
+    <!-- Footer Image Credit: https://dribbble.com/shots/1264163-Ghostbusters-ECOT-01 -->
+    <footer class="bg-danger">
+      <div class="contianer text-center">
+        <br>
+        <img src="car.png" style="max-height: 100px; max-width:100%">
+        <br>
+        The Ghostbusters
+        <br>
+        <span class="footer-text">
+        <a href="http://www.cs.umd.edu/~golbeck/INST631/whoyougonnacall.shtml" class="footer-link" target="_blank">Final Project</a> - <a href="http://taixiaoyu.com" class="footer-link" target="_blank">Xiaoyu Tai</a> - 2015</span>
+        <br>
+        <br>
+      </div>
+    </footer>
+    <!--/ Footer -->
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="process.js"></script>
+  </body>
+</html>
