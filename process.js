@@ -30,6 +30,10 @@ var complete_step = function(step) {
   d.html('');
 };
 
+var show_time = function () {
+  $('.process-schedule-time').show();
+}
+
 $(document).ready(function(){
   init();
 });

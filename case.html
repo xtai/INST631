@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Schedule</title>
+    <title>Case #1111</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./ghost.css">
@@ -22,7 +22,7 @@
             <li class="nav-item">
               <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="./schedule.html">Schedule</a>
             </li>
             <li class="nav-item">
@@ -46,11 +46,10 @@
     <!--/ Navigation Bar -->
     <br>
     <!-- Home Content -->
-    <div class="container process-steps active" id="schedule-step-1">
-      <div class="process-steps-cover"></div>
+    <div class="container process-steps" id="schedule-step-1">
       <div class="row">
         <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">1</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">What Ghost?</span></h1>
+          <h1><span class="process-steps-number">1</span><span class="process-steps-total">/5</span> <span class="process-steps-inline-title hidden-md-up">What Ghost?</span></h1>
         </div>
         <div class="col-md-10 col-sm-12">
           <h1 class="process-steps-title hidden-sm-down">What Ghost?</h1>
@@ -60,17 +59,11 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-offset-1 col-md-3 step_button_div">
-          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
-        </div>
-      </div>
     </div>
     <div class="container process-steps" id="schedule-step-2">
-      <div class="process-steps-cover"></div>
       <div class="row">
         <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">2</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">When did it happen?</span></h1>
+          <h1><span class="process-steps-number">2</span><span class="process-steps-total">/5</span> <span class="process-steps-inline-title hidden-md-up">When did it happen?</span></h1>
         </div>
         <div class="col-md-10 col-sm-12">
           <h1 class="process-steps-title hidden-sm-down">When did it happen?</h1>
@@ -107,17 +100,11 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-offset-1 col-md-3 step_button_div">
-          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
-        </div>
-      </div>
     </div>
     <div class="container process-steps" id="schedule-step-3">
-      <div class="process-steps-cover"></div>
       <div class="row">
         <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">3</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">Any photos or videos?</span></h1>
+          <h1><span class="process-steps-number">3</span><span class="process-steps-total">/5</span> <span class="process-steps-inline-title hidden-md-up">Any photos or videos?</span></h1>
         </div>
         <div class="col-md-10 col-sm-12">
           <h1 class="process-steps-title hidden-sm-down">Any photos or videos?</h1>
@@ -127,17 +114,11 @@
           </label>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-offset-1 col-md-3 step_button_div">
-          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
-        </div>
-      </div>
     </div>
     <div class="container process-steps" id="schedule-step-4">
-      <div class="process-steps-cover"></div>
       <div class="row">
         <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">4</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">Pick a date and time!</span></h1>
+          <h1><span class="process-steps-number">4</span><span class="process-steps-total">/5</span> <span class="process-steps-inline-title hidden-md-up">Pick a date and time!</span></h1>
         </div>
         <div class="col-md-10 col-sm-12">
           <h1 class="process-steps-title hidden-sm-down">Pick a date and time!</h1>
@@ -162,7 +143,7 @@
                 </label>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-4 col-xs-12 process-schedule-time">
+            <div class="col-lg-3 col-sm-4 col-xs-12">
               <p class="process-group-label">Morning</p>
               <div class="btn-group-vertical" data-toggle="buttons">
                 <label class="btn btn-danger-outline">
@@ -182,7 +163,7 @@
                 </label>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-4 col-xs-12 process-schedule-time">
+            <div class="col-lg-3 col-sm-4 col-xs-12">
               <p class="process-group-label">Afternoon</p>
               <div class="btn-group-vertical" data-toggle="buttons">
                 <label class="btn btn-danger-outline">
@@ -202,7 +183,7 @@
                 </label>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-4 col-xs-12 process-schedule-time">
+            <div class="col-lg-3 col-sm-4 col-xs-12">
               <p class="process-group-label">Night</p>
               <div class="btn-group-vertical" data-toggle="buttons">
                 <label class="btn btn-secondary-outline disabled">
@@ -222,10 +203,10 @@
                 </label>
               </div>
             </div>
-            <div class="col-lg-12 process-schedule-time">
+            <div class="col-lg-12">
               <small class="text-muted">You can choose multiple time for a day, and we will pick one and notify you.</small>
             </div>
-            <div class="col-lg-12 process-schedule-time">
+            <div class="col-lg-12">
               <div class="form-group">
                 <label class="control-label" for="Title"><br>These available slots won't work? Don't worry, please leave us a note and we will see what we can do.</label>
                 <textarea class="form-control" id="exampleTextarea" rows="1" placeholder="Nov 1, 2015 Afternoon!"></textarea>
@@ -234,17 +215,11 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-offset-1 col-md-3 step_button_div">
-          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
-        </div>
-      </div>
     </div>
     <div class="container process-steps" id="schedule-step-5">
-      <div class="process-steps-cover"></div>
       <div class="row">
         <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">5</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">How to contact you?</span></h1>
+          <h1><span class="process-steps-number">5</span><span class="process-steps-total">/5</span> <span class="process-steps-inline-title hidden-md-up">How to contact you?</span></h1>
         </div>
         <div class="col-md-10 col-sm-12">
           <h1 class="process-steps-title hidden-sm-down">How to contact you?</h1>
@@ -271,32 +246,11 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-offset-1 col-md-3 step_button_div">
-          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
-        </div>
-      </div>
     </div>
     <div class="container process-steps" id="schedule-step-6">
-      <div class="process-steps-cover"></div>
-      <div class="row">
-        <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">6</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">You are all set!</span></h1>
-        </div>
-        <div class="col-md-10 col-sm-12">
-          <h1 class="process-steps-title hidden-sm-down">That's it!</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-      </div>
       <div class="row">
         <div class="col-md-offset-1 col-md-3 col-sm-12">
-          <a class="btn btn-danger-outline btn-block step_button" href="#schedule-step-1" onclick="this.blur();">Review my case</a>
-        </div>
-        <div class="hidden-md-up col-sm-12">
-          <br>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <a class="btn btn-success btn-block step_button" href="./case.html">Submit</a>
+          <a class="btn btn-success btn-block step_button" href=".">Update</a>
         </div>
       </div>
       <div style="margin-bottom: 400px;"></div>
@@ -321,6 +275,5 @@
     <!-- jQuery & Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="./case.js"></script>
   </body>
 </html>

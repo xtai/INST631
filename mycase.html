@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>My Case</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./ghost.css">
+  </head>
+  <body style="padding-top: 54px;">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark navbar-fixed-top bg-danger bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#NavigationBar">
+        &#9776;
+      </button>
+      <div class="container">
+        <div class="collapse navbar-toggleable-xs" id="NavigationBar">
+          <a class="navbar-brand" href=".">The Ghostbusters</a>
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item">
+              <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./mycase.html">My Case</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target="#NavCollapsingContent" href="#">Where</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse" id="NavCollapsingContent" style="margin: 8px -16px -8px;">
+        <div class="bg-inverse p-a">
+          <div class="container">
+            <h4>Collapsed content</h4>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--/ Navigation Bar -->
+    <br>
+    <!-- Home Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-offset-3 col-xl-6 col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10">
+          <h1>Look up your case</h1>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="CaseNumber">Case#</label>
+                <input type="text" class="form-control" id="CaseNumber" placeholder="Enter Case Number">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Email">Email address</label>
+                <input type="email" class="form-control" id="Email" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="Phone">Phone</label>
+                <input type="text" class="form-control" id="Phone" placeholder="Enter phone">
+              </div>
+            </div>
+          </div>
+          <br>
+          <a class="btn btn-block btn-danger" href="./case.html">Search</a>
+          <br><br><br><br><br><br><br>
+        </div>
+      </div>
+    </div>
+    <!--/ Home Content -->
+    <!-- Footer -->
+    <!-- Footer Image Credit: https://dribbble.com/shots/1264163-Ghostbusters-ECOT-01 -->
+    <footer class="bg-danger">
+      <div class="contianer text-center">
+        <br>
+        <img src="car.png" style="max-height: 100px; max-width:100%">
+        <br>
+        The Ghostbusters
+        <br>
+        <span class="footer-text">
+        <a href="http://www.cs.umd.edu/~golbeck/INST631/whoyougonnacall.shtml" class="footer-link" target="_blank">Final Project</a> - <a href="http://taixiaoyu.com" class="footer-link" target="_blank">Xiaoyu Tai</a> - 2015</span>
+        <br>
+        <br>
+      </div>
+    </footer>
+    <!--/ Footer -->
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>
