@@ -25,7 +25,15 @@
   outline: none;
   box-shadow: none;
 }
-
+.home {
+  min-height: 500px;
+}
+.divider-text {
+  width: 50px;
+  margin: -28px auto 10px;
+  background-color: #fff;
+  color: #666;
+}
 
 /* Process Schedule
 -------------------- */

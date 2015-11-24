@@ -34,6 +34,10 @@ var show_time = function () {
   $('.process-schedule-time').show();
 }
 
+var choose_time = function () {
+  $('.time_step_button').removeClass('disabled')
+}
+
 $(document).ready(function(){
   init();
 });
