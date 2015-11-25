@@ -35,7 +35,41 @@ var show_time = function () {
 }
 
 var choose_time = function () {
-  $('.time_step_button').removeClass('disabled')
+  $('.time_step_button').removeClass('disabled btn-secondary-outline').addClass('btn-danger-outline');
+  $('.time_step_button').attr('onclick', 'next_step()');
+}
+
+var to_step_2 = function () {
+  if ($('#descTextarea').val() == '') {
+    $('#descTextareaDiv').removeClass('has-success').addClass('has-warning');
+    $('#descTextarea').removeClass('form-control-success').addClass('form-control-warning');
+  } else {
+    $('#descTextareaDiv').removeClass('has-warning').addClass('has-success');
+    $('#descTextarea').removeClass('form-control-warning').addClass('form-control-success');
+    next_step();
+  }
+}
+
+var to_step_6 = function () {
+  if ($('#Email').val() == '') {
+    $('#EmailDiv').removeClass('has-success').addClass('has-warning');
+    $('#Email').removeClass('form-control-success').addClass('form-control-warning');
+  } else {
+    $('#EmailDiv').removeClass('has-warning').addClass('has-success');
+    $('#Email').removeClass('form-control-warning').addClass('form-control-success');
+  }
+  if ($('#Phone').val() == '') {
+    $('#PhoneDiv').removeClass('has-success').addClass('has-warning');
+    $('#Phone').removeClass('form-control-success').addClass('form-control-warning');
+  } else {
+    $('#PhoneDiv').removeClass('has-warning').addClass('has-success');
+    $('#Phone').removeClass('form-control-warning').addClass('form-control-success');
+  }
+  if ($('#Email').val() != '' && $('#Phone').val() != '') {
+    next_step();
+  } else {
+    $('#EmailAndPhone').html('<small class=\"text-muted\">Email and phone number are required.</small>');
+  }
 }
 
 $(document).ready(function(){

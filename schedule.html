@@ -55,15 +55,15 @@
         </div>
         <div class="col-md-10 col-sm-12">
           <h1 class="process-steps-title hidden-sm-down">What Ghost?</h1>
-          <div class="form-group">
+          <div class="form-group" id="descTextareaDiv">
             <label class="control-label" for="Title">Describe what did you see, get as specific as you can.</label>
-            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="It looks lile a lady, and it appears to be a very odd reader as she likes to stack books up in the air."></textarea>
+            <textarea class="form-control" id="descTextarea" rows="3" placeholder="It looks lile a lady, and it appears to be a very odd reader as she likes to stack books up in the air."></textarea>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-offset-1 col-md-3 step_button_div">
-          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
+          <a class="btn btn-danger-outline btn-block step_button" onclick="to_step_2()">Next</a>
         </div>
       </div>
     </div>
@@ -76,6 +76,9 @@
         <div class="col-md-10 col-sm-12">
           <h1 class="process-steps-title hidden-sm-down">When did it happen?</h1>
           <div class="row">
+            <div class="col-xs-12">
+              <p>When did you see (or feel) the ghost last time?</p>
+            </div>
             <div class="col-xl-5 col-md-12">
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-danger-outline">
@@ -126,6 +129,8 @@
             <input type="file" id="file">
             <span class="file-custom"></span>
           </label>
+          <br>
+          <small class="text-muted">Media files are optional.</small>
         </div>
       </div>
       <div class="row">
@@ -143,6 +148,9 @@
         <div class="col-md-10 col-sm-12">
           <h1 class="process-steps-title hidden-sm-down">Pick a date and time!</h1>
           <div class="row">
+            <div class="col-xs-12">
+              <p>Here are all available time slots for Ghostbusters, please pick one or more slots for us to schedule your ghost busting.</p>
+            </div>
             <div class="col-lg-3 col-sm-12 col-xs-12">
               <p class="process-group-label">Date</p>
               <div class="btn-group-vertical" data-toggle="buttons">
@@ -229,7 +237,7 @@
             <div class="col-lg-12 process-schedule-time">
               <div class="form-group">
                 <label class="control-label" for="Title"><br>These available slots won't work? Don't worry, please leave us a note and we will see what we can do.</label>
-                <textarea class="form-control" id="exampleTextarea" rows="1" placeholder="Nov 1, 2015 Afternoon!"></textarea>
+                <textarea class="form-control" id="noteTextarea" rows="1" placeholder="Nov 1, 2015 Afternoon!"></textarea>
               </div>
             </div>
           </div>
@@ -237,7 +245,7 @@
       </div>
       <div class="row">
         <div class="col-md-offset-1 col-md-3 step_button_div">
-          <a class="btn btn-danger-outline btn-block step_button time_step_button disabled" onclick="next_step()">Next</a>
+          <a class="btn btn-secondary-outline btn-block step_button time_step_button disabled" onclick="">Next</a>
         </div>
       </div>
     </div>
@@ -251,13 +259,13 @@
           <h1 class="process-steps-title hidden-sm-down">How to contact you?</h1>
           <div class="row">
             <div class="col-md-6">
-              <div class="form-group">
+              <div class="form-group" id="EmailDiv">
                 <label for="Email">Email address</label>
                 <input type="email" class="form-control" id="Email" placeholder="Enter email">
               </div>
             </div>
             <div class="col-md-6">
-              <div class="form-group">
+              <div class="form-group" id="PhoneDiv">
                 <label for="Phone">Phone</label>
                 <input type="text" class="form-control" id="Phone" placeholder="Enter phone">
               </div>
@@ -268,13 +276,14 @@
                 <input type="text" class="form-control" id="Other" placeholder="Other contact">
               </div>
               <small class="text-muted">We'll never share your contact information with anyone else.</small>
+              <div id="EmailAndPhone"></div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-offset-1 col-md-3 step_button_div">
-          <a class="btn btn-danger-outline btn-block step_button" onclick="next_step()">Next</a>
+          <a class="btn btn-danger-outline btn-block step_button" onclick="to_step_6()">Next</a>
         </div>
       </div>
     </div>
