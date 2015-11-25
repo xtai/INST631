@@ -46,6 +46,69 @@
     </nav>
     <!--/ Navigation Bar -->
     <br>
+    <!-- Review Modal -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title" id="reviewModalLabel">My Case</h4>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <div class="card-header">
+                1. What Ghost?
+              </div>
+              <div class="card-block">
+                <p>It looks lile a lady, and it appears to be a very odd reader as she likes to stack books up in the air.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                2. When did it happen?
+              </div>
+              <div class="card-block">
+                <p><code>Today</code> - <code>Morning</code></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                3. Any photo or video?
+              </div>
+              <div class="card-block">
+                <p><code>[none]</code></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                4. Schedule date and time
+              </div>
+              <div class="card-block">
+                <p><code>11/15/2015 Sun</code> Morning at: <br><code>9:00 - 10:00</code>, <code>10:00 - 11:00</code></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                5. Contact
+              </div>
+              <div class="card-block">
+                <p>Email: <code>ghost@umd.edu</code></p>
+                <p>Phone: <code>(301) 555-2222</code></p>
+                <p>Other: <code>[empty]</code></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-secondary" href="#schedule-step-1" data-dismiss="modal" onclick="$('#reviewModal').modal('hide');">Make some changes</a>
+            <a class="btn btn-success step_button" href="./all_set.html">Submit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Review Modal -->
     <!-- Home Content -->
     <div class="container process-steps active" id="schedule-step-1">
       <div class="process-steps-cover"></div>
@@ -121,7 +184,7 @@
       <div class="process-steps-cover"></div>
       <div class="row">
         <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">3</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">Any photos or videos?</span></h1>
+          <h1><span class="process-steps-number">3</span><span class="process-steps-total">/6</span> <span class="process-steps-inline-title hidden-md-up">Any photo or video?</span></h1>
         </div>
         <div class="col-md-10 col-sm-12">
           <h1 class="process-steps-title hidden-sm-down">Any photos or videos?</h1>
@@ -300,16 +363,10 @@
       </div>
       <div class="row">
         <div class="col-md-offset-1 col-md-3 col-sm-12">
-          <a class="btn btn-danger-outline btn-block step_button" href="#schedule-step-1" onclick="this.blur();">Review my case</a>
-        </div>
-        <div class="hidden-md-up col-sm-12">
-          <br>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <a class="btn btn-success btn-block step_button" href="./all_set.html">Submit</a>
+          <a class="btn btn-success-outline btn-block step_button" onclick="this.blur();" data-toggle="modal" data-target="#reviewModal">Review my case</a>
         </div>
       </div>
-      <div style="margin-bottom: 400px;"></div>
+      <div style="margin-bottom: 200px;"></div>
     </div>
     <!--/ Home Content -->
     <!-- Footer -->

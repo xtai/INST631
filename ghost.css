@@ -86,3 +86,6 @@
 .process-schedule-time {
   display: none;
 }
+.card-block {
+  margin-bottom: -15px;
+}
