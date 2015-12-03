@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Admin - Case #1031</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-GHW2S7IZAQe8+YkyL99LyDj1zdWXSPOG+JZafCtKiSc= sha512-vxM32w6T7zJ83xOQ6FT4CEFnlasqmkcB0+ojgbI0N6ZtSxYvHmT7sX2icN07TqEqr5wdKwoLkmB8sAsGAjCJHg==" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ghost.css">
+  </head>
+  <body style="padding-top: 54px;">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark navbar-fixed-top bg-warning bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#NavigationBar">
+        &#9776;
+      </button>
+      <div class="container">
+        <div class="collapse navbar-toggleable-xs" id="NavigationBar">
+          <a class="navbar-brand" href="./admin.html"><i class="fa fa-cogs"></i> Admin - Ghostbusters</a>
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item">
+              <a class="nav-link" href="./admin.html">Admin Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./admin_cases.html">Cases</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/ Navigation Bar -->
+    <br>
+    <!-- Cancel Modal -->
+    <div class="modal fade" id="cancelModal" tabindex="-1" role="dialog" aria-labelledby="cancelModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title" id="cancelModalLabel">Cancel Case #1031</h4>
+          </div>
+          <div class="modal-body">
+            Your case will be canceled; if you change your mind, you can always create a new case using <a href="./schedule.html" target="_blank">schedule</a>.
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-secondary" href="#" data-dismiss="modal" onclick="$('#cancelModal').modal('hide');">Do Not Cancel</a>
+            <a class="btn btn-danger" href="./canceled.html">Cancel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Cancel Modal -->
+    <!-- Home Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="row">
+            <div class="col-xl-6 col-lg-12">
+              <h1>Case #1031</h1>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+              <a href="edit_case.html" class="pull-right btn btn-success-outline btn-block">Update This Case</a>
+            </div>
+            <div class="hidden-lg-up"><br><br></div>
+            <div class="col-xl-3 col-lg-6">
+              <a class="pull-right btn btn-danger-outline btn-block" onclick="this.blur();" data-toggle="modal" data-target="#cancelModal">Cancel This Case</a>
+            </div>
+            <div class="hidden-lg-up"><br><br></div>
+          </div>
+          <div class="hidden-md-down hidden-xl-up"><br></div>
+          <div class="alert alert-success" role="alert">
+            <strong>Your case has been confirmed!</strong> Ghostbusters will avrive at 9:00 am on 11/15/2015.
+          </div>
+          <hr>
+          <div class="card">
+            <div class="card-header">
+              1. What Ghost?
+            </div>
+            <div class="card-block">
+              <p>It looks like a lady, and it appears to be a very odd reader as she likes to stack books up in the air.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              2. When did it happen?
+            </div>
+            <div class="card-block">
+              <p><code>Today</code> - <code>Morning</code></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              3. Any photo or video?
+            </div>
+            <div class="card-block">
+              <p><code>[none]</code></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              4. Schedule date and time
+            </div>
+            <div class="card-block">
+              <p><code>11/15/2015 Sun</code> Morning at: <br><code>9:00 - 10:00</code>, <code>10:00 - 11:00</code></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              5. Contact
+            </div>
+            <div class="card-block">
+              <p>Email: <code>ghost@umd.edu</code></p>
+              <p>Phone: <code>(301) 555-2222</code></p>
+              <p>Address: <code>University of Maryland, 4130 Campus Dr, College Park, MD 20740</code></p>
+              <p>Other: <code>[empty]</code></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-offset-3 col-xl-3 col-lg-6">
+              <a href="edit_case.html" class="pull-right btn btn-success-outline btn-block">Update This Case</a>
+            </div>
+            <div class="hidden-lg-up"><br><br></div>
+            <div class="col-xl-3 col-lg-6">
+              <a href="cancel_case.html" class="pull-right btn btn-danger-outline btn-block" onclick="this.blur();" data-toggle="modal" data-target="#cancelModal">Cancel This Case</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Home Content -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Footer -->
+    <!-- Footer Image Credit: https://dribbble.com/shots/1264163-Ghostbusters-ECOT-01 -->
+    <footer class="bg-warning">
+      <div class="contianer text-center">
+        <br>
+        <img src="car.png" style="max-height: 100px; max-width:100%">
+        <br>
+        Ghostbusters - <tel>555-2368</tel>
+        <br>
+        <span class="footer-text">
+        <a href="http://www.cs.umd.edu/~golbeck/INST631/whoyougonnacall.shtml" class="footer-link" target="_blank">Final Project</a> - <a href="http://taixiaoyu.com" class="footer-link" target="_blank">Xiaoyu Tai</a> - 2015</span>
+        <br>
+        <br>
+      </div>
+    </footer>
+    <!--/ Footer -->
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js" integrity="sha256-+h0g0j7qusP72OZaLPCSZ5wjZLnoUUicoxbvrl14WxM= sha512-0z9zJIjxQaDVzlysxlaqkZ8L9jh8jZ2d54F3Dn36Y0a8C6eI/RFOME/tLCFJ42hfOxdclfa29lPSNCmX5ekxnw==" crossorigin="anonymous"></script>
+  </body>
+</html>

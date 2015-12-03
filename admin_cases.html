@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Admin - Cases - Ghostbusters</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-GHW2S7IZAQe8+YkyL99LyDj1zdWXSPOG+JZafCtKiSc= sha512-vxM32w6T7zJ83xOQ6FT4CEFnlasqmkcB0+ojgbI0N6ZtSxYvHmT7sX2icN07TqEqr5wdKwoLkmB8sAsGAjCJHg==" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ghost.css">
+  </head>
+  <body style="padding-top: 54px;" class="admin-body">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark navbar-fixed-top bg-warning bg-faded">
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#NavigationBar">
+        &#9776;
+      </button>
+      <div class="container">
+        <div class="collapse navbar-toggleable-xs" id="NavigationBar">
+          <a class="navbar-brand" href="./admin.html"><i class="fa fa-cogs"></i> Admin - Ghostbusters</a>
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item">
+              <a class="nav-link" href="./admin.html">Admin Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./admin_cases.html">Cases <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/ Navigation Bar -->
+    <br>
+    <!-- Home Content -->
+    <div class="container home">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="admin-case-div">
+            <div class="admin-case-div-header">
+              <h1>6</h1>
+              <h3><i class="fa fa-calendar-o"></i> New</h3>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="admin-case-div">
+            <div class="admin-case-div-header">
+              <h1>4</h1>
+              <h3><i class="fa fa-calendar-plus-o"></i> Upcoming</h3>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="admin-case-div">
+            <div class="admin-case-div-header">
+              <h1>175</h1>
+              <h3><i class="fa fa-calendar-check-o"></i> Archived</h3>
+              <br>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="admin-main-div admin-main-table table-responsive">
+            <table class="table table-hover table-sm">
+              <thead>
+                <tr>
+                  <th>Added Time</th>
+                  <th>Status</th>
+                  <th>Case #</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Schedule</th>
+                  <th>Detial</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-warning">
+                  <th scope="row">12/31/15</th>
+                  <td><code>New</code></td>
+                  <td><a href="./admin_case.html">#1039</a></td>
+                  <td><code>muster@umd.edu</code></td>
+                  <td><code>(301) 555-0145</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1039</a></td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">12/30/15</th>
+                  <td><code>New</code></td>
+                  <td><a href="./admin_case.html">#1038</a></td>
+                  <td><code>condensary@umd.edu</code></td>
+                  <td><code>(301) 555-0149</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1038</a></td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">12/29/15</th>
+                  <td><code>New</code></td>
+                  <td><a href="./admin_case.html">#1037</a></td>
+                  <td><code>unforeknowable@umd.edu</code></td>
+                  <td><code>(301) 555-0108</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1037</a></td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">12/28/15</th>
+                  <td><code>New</code></td>
+                  <td><a href="./admin_case.html">#1036</a></td>
+                  <td><code>unfactional@umd.edu</code></td>
+                  <td><code>(301) 555-0141</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1036</a></td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">12/27/15</th>
+                  <td><code>New</code></td>
+                  <td><a href="./admin_case.html">#1035</a></td>
+                  <td><code>vaginomycosis@umd.edu</code></td>
+                  <td><code>(301) 555-0164</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1035</a></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">12/26/15</th>
+                  <td><code>Upcoming</code></td>
+                  <td><a href="./admin_case.html">#1034</a></td>
+                  <td><code>sade@umd.edu</code></td>
+                  <td><code>(301) 555-0173</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1034</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">12/25/15</th>
+                  <td><code>Upcoming</code></td>
+                  <td><a href="./admin_case.html">#1033</a></td>
+                  <td><code>calculus@umd.edu</code></td>
+                  <td><code>(301) 555-0145</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1033</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">12/24/15</th>
+                  <td><code>Upcoming</code></td>
+                  <td><a href="./admin_case.html">#1032</a></td>
+                  <td><code>sounding@umd.edu</code></td>
+                  <td><code>(301) 555-0149</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1032</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">12/23/15</th>
+                  <td><code>Upcoming</code></td>
+                  <td><a href="./admin_case.html">#1031</a></td>
+                  <td><code>subfoliar@umd.edu</code></td>
+                  <td><code>(301) 555-0108</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1031</a></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/22/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1030</a></td>
+                  <td><code>sharonville@umd.edu</code></td>
+                  <td><code>(301) 555-0141</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1030</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/21/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1029</a></td>
+                  <td><code>chivalrously@umd.edu</code></td>
+                  <td><code>(301) 555-0164</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1029</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/20/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1028</a></td>
+                  <td><code>popinjay@umd.edu</code></td>
+                  <td><code>(301) 555-0173</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1028</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/19/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1027</a></td>
+                  <td><code>cleistothecium@umd.edu</code></td>
+                  <td><code>(301) 555-0145</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1027</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/18/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1026</a></td>
+                  <td><code>limesulfur@umd.edu</code></td>
+                  <td><code>(301) 555-0149</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1026</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/17/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1025</a></td>
+                  <td><code>unresentful@umd.edu</code></td>
+                  <td><code>(301) 555-0108</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1025</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/16/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1024</a></td>
+                  <td><code>wheelchair@umd.edu</code></td>
+                  <td><code>(301) 555-0141</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1024</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/15/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1023</a></td>
+                  <td><code>bisectional@umd.edu</code></td>
+                  <td><code>(301) 555-0164</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1023</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/14/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1022</a></td>
+                  <td><code>egression@umd.edu</code></td>
+                  <td><code>(301) 555-0173</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1022</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/13/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1021</a></td>
+                  <td><code>chamoised@umd.edu</code></td>
+                  <td><code>(301) 555-0145</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1021</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/12/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1020</a></td>
+                  <td><code>chapman@umd.edu</code></td>
+                  <td><code>(301) 555-0149</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1020</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/11/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1019</a></td>
+                  <td><code>ghost@umd.edu</code></td>
+                  <td><code>(301) 555-0108</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1019</a></td>
+                </tr>
+                <tr class="table-active">
+                  <th scope="row">12/10/15</th>
+                  <td><code>Archived</code></td>
+                  <td><a href="./admin_case.html">#1018</a></td>
+                  <td><code>ghost@umd.edu</code></td>
+                  <td><code>(301) 555-0141</code></td>
+                  <td><code>11/15/2015 Sun</code>: <code>9:00 AM - 11:00 AM</code></td>
+                  <td><a href="./admin_case.html">Case #1018</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Home Content -->
+    <!-- Footer -->
+    <!-- Footer Image Credit: https://dribbble.com/shots/1264163-Ghostbusters-ECOT-01 -->
+    <footer class="bg-warning">
+      <div class="contianer text-center">
+        <br>
+        <img src="car.png" style="max-height: 100px; max-width:100%">
+        <br>
+        Ghostbusters - <tel>555-2368</tel>
+        <br>
+        <span class="footer-text">
+        <a href="http://www.cs.umd.edu/~golbeck/INST631/whoyougonnacall.shtml" class="footer-link" target="_blank">Final Project</a> - <a href="http://taixiaoyu.com" class="footer-link" target="_blank">Xiaoyu Tai</a> - 2015</span>
+        <br>
+        <a href="#" class="footer-link">Edit Footer</a>
+        <br>
+        <br>
+      </div>
+    </footer>
+    <!--/ Footer -->
+    <!-- jQuery & Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js" integrity="sha256-+h0g0j7qusP72OZaLPCSZ5wjZLnoUUicoxbvrl14WxM= sha512-0z9zJIjxQaDVzlysxlaqkZ8L9jh8jZ2d54F3Dn36Y0a8C6eI/RFOME/tLCFJ42hfOxdclfa29lPSNCmX5ekxnw==" crossorigin="anonymous"></script>
+  </body>
+</html>
