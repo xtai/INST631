@@ -46,220 +46,110 @@
     </nav>
     <!--/ Navigation Bar -->
     <br>
+    <!-- Cancel Modal -->
+    <div class="modal fade" id="cancelModal" tabindex="-1" role="dialog" aria-labelledby="cancelModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              <span class="sr-only">Close</span>
+            </button>
+            <h4 class="modal-title" id="cancelModalLabel">Cancel Case #1031</h4>
+          </div>
+          <div class="modal-body">
+            Your case will be canceled; if you change your mind, you can always create a new case using <a href="./schedule.html" target="_blank">schedule</a>.
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-secondary" href="#" data-dismiss="modal" onclick="$('#cancelModal').modal('hide');">Do Not Cancel</a>
+            <a class="btn btn-danger" href="./canceled.html">Cancel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Cancel Modal -->
     <!-- Home Content -->
-    <div class="container process-steps" id="schedule-step-1">
+    <div class="container">
       <div class="row">
-        <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">1</span><span class="process-steps-total">/5</span> <span class="process-steps-inline-title hidden-md-up">What Ghost?</span></h1>
-        </div>
-        <div class="col-md-10 col-sm-12">
-          <h1 class="process-steps-title hidden-sm-down">What Ghost?</h1>
-          <div class="form-group">
-            <label class="control-label" for="Title">Describe what did you see, get as specific as you can.</label>
-            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="It looks like a lady, and it appears to be a very odd reader as she likes to stack books up in the air."></textarea>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container process-steps" id="schedule-step-2">
-      <div class="row">
-        <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">2</span><span class="process-steps-total">/5</span> <span class="process-steps-inline-title hidden-md-up">When did it happen?</span></h1>
-        </div>
-        <div class="col-md-10 col-sm-12">
-          <h1 class="process-steps-title hidden-sm-down">When did it happen?</h1>
+        <div class="col-md-10 col-md-offset-1">
           <div class="row">
-            <div class="col-xl-5 col-md-12">
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-danger-outline">
-                  <input type="radio" name="Date" id="date_1" autocomplete="off"> Eariler
-                </label>
-                <label class="btn btn-danger-outline">
-                  <input type="radio" name="Date" id="date_2" autocomplete="off"> Yesterday
-                </label>
-                <label class="btn btn-danger-outline active">
-                  <input type="radio" name="Date" id="date_3" autocomplete="off" checked> Today
-                </label>
-              </div>
+            <div class="col-xl-6 col-lg-12">
+              <h1>Case #1031</h1>
             </div>
-            <div class="col-xl-5 col-md-12">
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-danger-outline">
-                  <input type="radio" name="Time" id="time_1" autocomplete="off"> Morning
-                </label>
-                <label class="btn btn-danger-outline">
-                  <input type="radio" name="Time" id="time_2" autocomplete="off"> Afternoon
-                </label>
-                <label class="btn btn-danger-outline">
-                  <input type="radio" name="Time" id="time_3" autocomplete="off"> Evening
-                </label>
-                <label class="btn btn-danger-outline">
-                  <input type="radio" name="Time" id="time_3" autocomplete="off"> Night
-                </label>
-              </div>
+            <div class="col-xl-3 col-lg-6">
+              <a href="edit_case.html" class="pull-right btn btn-success-outline btn-block">Update This Case</a>
+            </div>
+            <div class="hidden-lg-up"><br><br></div>
+            <div class="col-xl-3 col-lg-6">
+              <a class="pull-right btn btn-danger-outline btn-block" onclick="this.blur();" data-toggle="modal" data-target="#cancelModal">Cancel This Case</a>
+            </div>
+            <div class="hidden-lg-up"><br><br></div>
+          </div>
+          <div class="hidden-md-down hidden-xl-up"><br></div>
+          <div class="alert alert-success" role="alert">
+            <strong>Your case has been confirmed!</strong> Ghostbusters will avrive at 9:00 am on 11/15/2015.
+          </div>
+          <hr>
+          <div class="card">
+            <div class="card-header">
+              1. What Ghost?
+            </div>
+            <div class="card-block">
+              <p>It looks like a lady, and it appears to be a very odd reader as she likes to stack books up in the air.</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="container process-steps" id="schedule-step-3">
-      <div class="row">
-        <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">3</span><span class="process-steps-total">/5</span> <span class="process-steps-inline-title hidden-md-up">Any photos or videos?</span></h1>
-        </div>
-        <div class="col-md-10 col-sm-12">
-          <h1 class="process-steps-title hidden-sm-down">Any photos or videos?</h1>
-          <label class="file">
-            <input type="file" id="file">
-            <span class="file-custom"></span>
-          </label>
-        </div>
-      </div>
-    </div>
-    <div class="container process-steps" id="schedule-step-4">
-      <div class="row">
-        <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">4</span><span class="process-steps-total">/5</span> <span class="process-steps-inline-title hidden-md-up">Pick a date and time!</span></h1>
-        </div>
-        <div class="col-md-10 col-sm-12">
-          <h1 class="process-steps-title hidden-sm-down">Pick a date and time!</h1>
+          <div class="card">
+            <div class="card-header">
+              2. When did it happen?
+            </div>
+            <div class="card-block">
+              <p><code>Today</code> - <code>Morning</code></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              3. Any photo or video?
+            </div>
+            <div class="card-block">
+              <p><code>[none]</code></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              4. Schedule date and time
+            </div>
+            <div class="card-block">
+              <p><code>11/15/2015 Sun</code> Morning at: <br><code>9:00 - 10:00</code>, <code>10:00 - 11:00</code></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              5. Contact
+            </div>
+            <div class="card-block">
+              <p>Email: <code>ghost@umd.edu</code></p>
+              <p>Phone: <code>(301) 555-2222</code></p>
+              <p>Address: <code>University of Maryland, 4130 Campus Dr, College Park, MD 20740</code></p>
+              <p>Other: <code>[empty]</code></p>
+            </div>
+          </div>
           <div class="row">
-            <div class="col-lg-3 col-sm-12 col-xs-12">
-              <p class="process-group-label">Date</p>
-              <div class="btn-group-vertical" data-toggle="buttons">
-                <label class="btn btn-danger-outline active" onclick="show_time();">
-                  <input type="radio" name="Time" id="time_2" autocomplete="off" checked> 11/12/2015 Thu
-                </label>
-                <label class="btn btn-danger-outline" onclick="show_time();">
-                  <input type="radio" name="Time" id="time_1" autocomplete="off"> 11/13/2015 Fri
-                </label>
-                <label class="btn btn-danger-outline" onclick="show_time();">
-                  <input type="radio" name="Time" id="time_1" autocomplete="off"> 11/14/2015 Sat
-                </label>
-                <label class="btn btn-danger-outline" onclick="show_time();">
-                  <input type="radio" name="Time" id="time_2" autocomplete="off"> 11/15/2015 Sun
-                </label>
-                <label class="btn btn-danger-outline" onclick="show_time();">
-                  <input type="radio" name="Time" id="time_3" autocomplete="off"> 11/16/2015 Mon
-                </label>
-              </div>
+            <div class="col-xl-offset-3 col-xl-3 col-lg-6">
+              <a href="edit_case.html" class="pull-right btn btn-success-outline btn-block">Update This Case</a>
             </div>
-            <div class="col-lg-3 col-sm-4 col-xs-12">
-              <p class="process-group-label">Morning</p>
-              <div class="btn-group-vertical" data-toggle="buttons">
-                <label class="btn btn-danger-outline">
-                  <input type="checkbox" name="Time" id="time_2" autocomplete="off"> 7:00 - 8:00
-                </label>
-                <label class="btn btn-danger-outline">
-                  <input type="checkbox" name="Time" id="time_1" autocomplete="off"> 8:00 - 9:00
-                </label>
-                <label class="btn btn-danger-outline">
-                  <input type="checkbox" name="Time" id="time_1" autocomplete="off"> 9:00 - 10:00
-                </label>
-                <label class="btn btn-secondary-outline disabled">
-                  <input type="checkbox" name="Time" id="time_2" autocomplete="off"> 10:00 - 11:00
-                </label>
-                <label class="btn btn-secondary-outline disabled">
-                  <input type="checkbox" name="Time" id="time_3" autocomplete="off"> 11:00 - 12:00
-                </label>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4 col-xs-12">
-              <p class="process-group-label">Afternoon</p>
-              <div class="btn-group-vertical" data-toggle="buttons">
-                <label class="btn btn-danger-outline">
-                  <input type="checkbox" name="Time" id="time_1" autocomplete="off"> 1:00 - 2:00
-                </label>
-                <label class="btn btn-secondary-outline disabled">
-                  <input type="checkbox" name="Time" id="time_2" autocomplete="off"> 2:00 - 3:00
-                </label>
-                <label class="btn btn-danger-outline">
-                  <input type="checkbox" name="Time" id="time_3" autocomplete="off"> 3:00 - 4:00
-                </label>
-                <label class="btn btn-danger-outline">
-                  <input type="checkbox" name="Time" id="time_3" autocomplete="off"> 4:00 - 5:00
-                </label>
-                <label class="btn btn-danger-outline">
-                  <input type="checkbox" name="Time" id="time_3" autocomplete="off"> 5:00 - 6:00
-                </label>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-4 col-xs-12">
-              <p class="process-group-label">Night</p>
-              <div class="btn-group-vertical" data-toggle="buttons">
-                <label class="btn btn-secondary-outline disabled">
-                  <input type="checkbox" name="Time" id="time_1" autocomplete="off"> 6:00 - 7:00
-                </label>
-                <label class="btn btn-danger-outline">
-                  <input type="checkbox" name="Time" id="time_2" autocomplete="off"> 7:00 - 8:00
-                </label>
-                <label class="btn btn-danger-outline">
-                  <input type="checkbox" name="Time" id="time_3" autocomplete="off"> 8:00 - 9:00
-                </label>
-                <label class="btn btn-secondary-outline disabled">
-                  <input type="checkbox" name="Time" id="time_3" autocomplete="off"> 9:00 - 10:00
-                </label>
-                <label class="btn btn-secondary-outline disabled">
-                  <input type="checkbox" name="Time" id="time_3" autocomplete="off"> 10:00 - 11:00
-                </label>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <small class="text-muted">You can choose multiple time for a day, and we will pick one and notify you.</small>
-            </div>
-            <div class="col-lg-12">
-              <div class="form-group">
-                <label class="control-label" for="Title"><br>These available slots won't work? Don't worry, please leave us a note and we will see what we can do.</label>
-                <textarea class="form-control" id="exampleTextarea" rows="1" placeholder="Nov 1, 2015 Afternoon!"></textarea>
-              </div>
+            <div class="hidden-lg-up"><br><br></div>
+            <div class="col-xl-3 col-lg-6">
+              <a href="cancel_case.html" class="pull-right btn btn-danger-outline btn-block" onclick="this.blur();" data-toggle="modal" data-target="#cancelModal">Cancel This Case</a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container process-steps" id="schedule-step-5">
-      <div class="row">
-        <div class="col-md-1 col-sm-12">
-          <h1><span class="process-steps-number">5</span><span class="process-steps-total">/5</span> <span class="process-steps-inline-title hidden-md-up">How to contact you?</span></h1>
-        </div>
-        <div class="col-md-10 col-sm-12">
-          <h1 class="process-steps-title hidden-sm-down">How to contact you?</h1>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="Email">Email address</label>
-                <input type="email" class="form-control" id="Email" placeholder="Enter email">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="Phone">Phone</label>
-                <input type="text" class="form-control" id="Phone" placeholder="Enter phone">
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-group">
-                <label for="Other">Other</label>
-                <input type="text" class="form-control" id="Other" placeholder="Other contact">
-              </div>
-              <small class="text-muted">We'll never share your contact information with anyone else.</small>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container process-steps" id="schedule-step-6">
-      <div class="row">
-        <div class="col-md-offset-1 col-md-3 col-sm-12">
-          <a class="btn btn-success-outline btn-block step_button" href="./edit_case.html">Update</a>
-        </div>
-        <div class="col-md-3 col-sm-12">
-          <a class="btn btn-success btn-block step_button" href=".">Looks Good</a>
-        </div>
-      </div>
-      <div style="margin-bottom: 400px;"></div>
     </div>
     <!--/ Home Content -->
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Footer -->
     <!-- Footer Image Credit: https://dribbble.com/shots/1264163-Ghostbusters-ECOT-01 -->
     <footer class="bg-danger">
