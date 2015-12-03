@@ -26,7 +26,7 @@
   box-shadow: none;
 }
 .home {
-  min-height: 500px;
+  min-height: 400px;
 }
 .divider-text {
   width: 50px;
@@ -34,6 +34,16 @@
   background-color: #fff;
   color: #666;
 }
+.admin-main-div,
+a {
+  transition: all 0.15s;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
 
 /* Process Schedule
 -------------------- */
@@ -91,5 +101,33 @@
 }
 
 
-/* Process Schedule
+/* Admin
 -------------------- */
+.admin-body {
+  background-image: url(http://xg2.taixiaoyu.com/assets/media/bg2.png)
+}
+.admin-main-div {
+  margin-bottom: 20px;
+  border: 1px solid #BBB;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .6);
+}
+.admin-main-div:hover {
+  background-color: rgba(255,255,255,0.8);
+}
+.admin-main-div-header h1 {
+  color: #555;
+  font-size: 120px;
+  font-weight: 100;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+.admin-main-div-header h3 {
+  font-size: 20px;
+  color: #555;
+  font-weight: 200;
+  text-align: center;
+  padding-bottom: 0px;
+}
+

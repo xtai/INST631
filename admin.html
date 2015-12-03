@@ -10,7 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
     <link rel="stylesheet" href="./ghost.css">
   </head>
-  <body style="padding-top: 54px;">
+  <body style="padding-top: 54px;" class="admin-body">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-dark navbar-fixed-top bg-warning bg-faded">
       <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#NavigationBar">
@@ -21,26 +21,18 @@
           <a class="navbar-brand" href="."><i class="fa fa-cogs"></i> Admin - Ghostbusters</a>
           <ul class="nav navbar-nav pull-right">
             <li class="nav-item active">
-              <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href=".">Admin Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./schedule.html">Schedule</a>
+              <a class="nav-link" href="./admin_case.html">Cases</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./mycase.html">My Case</a>
+              <a class="nav-link" href="#">|</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" data-target="#NavCollapsingContent" href="#">Where?</a>
+              <a class="nav-link" href="./">Home</a>
             </li>
           </ul>
-        </div>
-      </div>
-      <div class="collapse" id="NavCollapsingContent" style="margin: 8px -16px -8px;">
-        <div class="bg-inverse p-a">
-          <div class="container">
-            <h4>Where are they? <i class="fa fa-map-marker"></i> E 44th St, 7th Ave, New York, NY</h4>
-            <span class="text-muted">Ghostbusters were <a href="https://www.google.com/maps/search/E+44th+St,+2nd+Ave/" target="_blank">here</a>, at 10:00 am, 1984/10/01.</span>
-          </div>
         </div>
       </div>
     </nav>
@@ -49,8 +41,38 @@
     <!-- Home Content -->
     <div class="container home">
       <div class="row">
-        <div class="col-lg-6 admin-main-div">
-          
+        <div class="col-lg-4">
+          <a href="./admin_cases.html">
+            <div class="admin-main-div">
+              <div class="admin-main-div-header">
+                <h1>28</h1>
+                <h3><i class="fa fa-calendar-o"></i> New</h3>
+                <br>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="./admin_cases.html">
+            <div class="admin-main-div">
+              <div class="admin-main-div-header">
+                <h1>6</h1>
+                <h3><i class="fa fa-calendar-plus-o"></i> Upcoming</h3>
+                <br>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <a href="./admin_cases.html">
+            <div class="admin-main-div">
+              <div class="admin-main-div-header">
+                <h1>175</h1>
+                <h3><i class="fa fa-calendar-check-o"></i> Archived</h3>
+                <br>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
