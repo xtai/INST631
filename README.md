@@ -1,22 +1,13 @@
-# INST631-FINAL-MOCKUP
-http://www.cs.umd.edu/~golbeck/INST631/whoyougonnacall.shtml
+# INST631 Final Project
 
-# Detail Matters
+A scheduling website  
 
-## Processing
+http://631.taixiaoyu.com/final/  
 
-Be focused, only displaying information that matters.
+http://631.taixiaoyu.com/final/admin.html  
 
-## Datetime Picker
+Assignment link:  
+http://www.cs.umd.edu/~golbeck/INST631/whoyougonnacall.shtml  
 
-For reporting:
-- Earlier
-- Yesterday
-- Today
-
-For Scheduling:
-- Next available appointments
-
-## No log in
-
-Look up by case#; however, extra security steps are required to look up contact info.
+# License
+Code are licensed under MIT.
