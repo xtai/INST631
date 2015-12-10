@@ -1,13 +1,23 @@
 # INST631 Final Project
 
-A scheduling website  
+A scheduling website for the _Ghostbuster_ movie.
 
-http://631.taixiaoyu.com/final/  
 
-http://631.taixiaoyu.com/final/admin.html  
+## Links
 
-Assignment link:  
+Regular User: http://631.taixiaoyu.com/final/  
+_Ghostbuster_ Staff: http://631.taixiaoyu.com/final/admin.html  
+
+
+## Assignment Link
+
 http://www.cs.umd.edu/~golbeck/INST631/whoyougonnacall.shtml  
 
-# License
-Code are licensed under MIT.
+
+## Presentation
+
+
+http://ghost.taixiaoyu.com  
+
+## License
+Code are licensed under MIT.  
